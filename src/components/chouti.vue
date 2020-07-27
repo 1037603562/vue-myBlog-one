@@ -128,7 +128,7 @@ export default {
     .dr_top{
         height: 180px;
         background-image: linear-gradient(to right,#d3d1d5 0,#0f9d58 100%);
-        opacity: 0.8;
+         opacity: 1;
         padding-left: 30px;
         padding-top: 10px;
         color: white;

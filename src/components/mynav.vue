@@ -120,17 +120,25 @@ import chouti from '../components/chouti.vue'
        
          .cd{
                 display: block;
-                
                 color: #d3d1d5;
                 margin: 20px 0 0 50px;
+                
             }
              .nv-right{
                  display: none;
              }
               .nv-left{
                  margin-left: 200px;
-                 margin-top: 20px;
+                 margin-top: 10px;
+                 a{
+                         width: 300px!important;
+                         margin-left: -120px!important;
+                 }
              }
+             .navAfterStyle{//nav头部鼠标滚动后样式
+            opacity:1;
+            background-image: linear-gradient(to right,#bf30ac 0,#0f9d58 100%);
+        }
 	}
 	@media (min-width: 541px) and (max-width: 960px){
 		.navs{
@@ -149,6 +157,10 @@ import chouti from '../components/chouti.vue'
              }
         }
        
+        .navAfterStyle{//nav头部鼠标滚动后样式
+            opacity:1;
+            background-image: linear-gradient(to right,#bf30ac 0,#0f9d58 100%);
+        } 
 	}
 	@media screen and (min-width: 961px){
 		.navs{
@@ -165,6 +177,10 @@ import chouti from '../components/chouti.vue'
                 }
             }
         }
+        .navAfterStyle{//nav头部鼠标滚动后样式
+    background-image: linear-gradient(to right,#bf30ac 0,#0f9d58 100%);
+    opacity: .8;
+}
 	}
 
 
@@ -172,10 +188,10 @@ import chouti from '../components/chouti.vue'
 
 
 
-.navAfterStyle{//nav头部鼠标滚动后样式
-    background-image: linear-gradient(to right,#bf30ac 0,#0f9d58 100%);
-    opacity: .8;
-}
+// .navAfterStyle{//nav头部鼠标滚动后样式
+//     background-image: linear-gradient(to right,#bf30ac 0,#0f9d58 100%);
+//     opacity: .8;
+// }
 .navsBoss{
     width: 100%;
     -min-width: 1400px;
