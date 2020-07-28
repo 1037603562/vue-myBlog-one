@@ -123,6 +123,9 @@ import backtop from '../components/Backtop.vue'
 
 <style lang="scss" scoped>
 @media screen and (max-width: 540px){
+    #mycards{
+        padding-left: 0!important;
+    }
        .el-card{
                width: 170px!important;
                 height: 200px!important;

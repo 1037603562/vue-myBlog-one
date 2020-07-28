@@ -80,16 +80,34 @@ import backtop from '../components/Backtop.vue'
 
 <style lang="scss" scoped>
 @media screen and (max-width: 540px){
+   
+
       .cd1{
           width: 100%!important;
           height: 250px!important;;
           margin-bottom: 40px!important;
           .el-button{
               position: absolute;
-                top: 210px!important;
-                left: 464px!important;
+                top: 110px !important;
+                left: 119px !important;
           }
       }
+
+ .cd2{
+          .el-button{
+              position: absolute;
+                 top: 410px !important;
+                left: 119px !important;
+          } 
+      }
+      .cd3{
+            .el-button{
+                        position: absolute;
+                        top: 700px !important;
+                         left: 119px !important;
+                    }
+      }
+
       .cd1_right{
           padding-top: 20px!important;
             margin-left: 0px!important;

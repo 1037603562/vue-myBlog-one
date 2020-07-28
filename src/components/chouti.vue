@@ -117,8 +117,11 @@ export default {
 </script>
 <style lang="scss" scoped>
 @media screen and (max-width: 540px){
+    // .el-drawer{
+    //     width: 40%!important;
+    // }
      .dw{
-        width: 150%!important;
+        width: 180%!important;
     }
 }
 .chouti{

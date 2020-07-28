@@ -182,13 +182,25 @@ import backtop from '../components/Backtop.vue'
      .ct{
             //  margin-left: -179px!important;
             //  margin-top: 70px!important;
-               margin-left: -28px!important;
-            
+               margin-left: -28px!important;    
      }
- 
+       .pinlun{
+            .el-button{
+                        position: absolute;
+                        top: 147px!important;
+                        left: 175px!important;
+            }
+        }
 	}
 
 	@media (min-width: 541px) and (max-width: 960px){
+        .pinlun{
+            .el-button{
+                    position: absolute;
+                    top: 225px!important;
+                    left: 480px!important;
+            }
+        }
 	  .ct{
           margin-top: 20px!important;
       }
