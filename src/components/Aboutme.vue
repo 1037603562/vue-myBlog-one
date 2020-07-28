@@ -248,6 +248,104 @@ import backtop from '../components/Backtop.vue'
 </script>
 
 <style lang="scss" scoped>
+@media screen and (max-width: 540px){
+    .ph{
+        margin: 0!important;
+    }
+    .xm_hd{
+        margin-top: 150px!important;
+    }
+    .oth{
+        .el-button{
+            margin-bottom: 10px!important;
+        }
+    }
+     .hd_middle{
+        left:37%!important;
+        width: 150px!important;
+        height: 150px!important;
+        top: -100px!important;
+        img{
+            width: 150px!important;
+            height: 150px!important;
+        }
+    }
+
+    .hd_left{
+        margin-left: -10px!important;
+        font-size: 10px!important;
+    }
+    .hd_right{
+        font-size: 10px!important;
+        margin-right: -26px!important;
+        .lianxi{
+            div{
+                width: 30px!important;
+                height: 30px!important;
+                margin-right: 10px!important;
+               
+            }
+        }
+    }  
+    .xm_b{
+        width: 100%!important;
+         p{
+            margin-left: 70px!important;
+        }
+    }
+    .jn_body_jdt{
+        width: 100%!important;
+        margin-left: 10px!important;
+    }
+    .ph{
+        width: 100%!important;
+    }
+    .xm_b_b{
+        margin-left: 100px!important;
+    }
+	}
+
+	@media (min-width: 541px) and (max-width: 960px){
+	.hd_middle{
+        left:43%!important;
+    }
+    .xm_b_b{
+        margin-left: 60px!important;
+        
+    }
+    .xm_b{
+        p{
+            margin-left: 20px!important;
+        }  
+        .xm_b_b{
+            margin-left: 100px;
+        }
+    }
+     .ph{
+         margin-left:130px!important;
+         width: 15%!important;
+         img{
+             width: 230px!important;
+         }
+     }
+       
+	}
+	@media screen and (min-width: 961px){
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .aboutme{
       overflow-x: hidden;
         overflow-y: scroll;

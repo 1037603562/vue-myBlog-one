@@ -79,6 +79,63 @@ import backtop from '../components/Backtop.vue'
 </script>
 
 <style lang="scss" scoped>
+@media screen and (max-width: 540px){
+      .cd1{
+          width: 100%!important;
+          height: 250px!important;;
+          margin-bottom: 40px!important;
+          .el-button{
+              position: absolute;
+                top: 210px!important;
+                left: 464px!important;
+          }
+      }
+      .cd1_right{
+          padding-top: 20px!important;
+            margin-left: 0px!important;
+      }
+      .ly{
+          padding-left: 21%!important;
+      }
+	}
+
+	@media (min-width: 541px) and (max-width: 960px){
+	  .cd1{
+          width: 100%!important;
+          margin-bottom: 40px!important;
+          .el-button{
+              position: absolute;
+                top: 210px!important;
+                left: 464px!important;
+          }
+      }
+      .cd2{
+          .el-button{
+              position: absolute;
+                top: 450px!important;
+                left: 464px!important;
+          } 
+      }
+      .cd3{
+            .el-button{
+                        position: absolute;
+                        top: 700px!important;
+                left: 464px!important;
+                    }
+      }
+      
+          
+      
+	}
+	@media screen and (min-width: 961px){
+		
+	}
+
+
+
+
+
+
 .mylabel{
       overflow-x: hidden;
         overflow-y: scroll;
@@ -134,10 +191,11 @@ import backtop from '../components/Backtop.vue'
                 }
             }
             width: 80%;
-            height: 450px;
+            -height: 450px;
             text-align: center;
            margin-top: -70px;
            margin-left: 10%;
+           padding-bottom: 40px;
            border-radius: 10px;
            margin-bottom: 20px;
            position: relative;

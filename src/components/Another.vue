@@ -141,6 +141,84 @@ import backtop from '../components/Backtop.vue'
 </script>
 
 <style lang="scss" scoped>
+@media screen and (max-width: 540px){
+  .top_left{
+      width: 100px!important;
+    height: 100px!important;
+    img{
+        width: 100px!important;
+    height: 100px!important;
+    }
+  }
+  .top_right{
+      width:116%!important;
+      ul{
+          li{
+              font-size: 10px;
+              span{margin-right: 0!important;}
+              .top_r{width: 36%!important;}
+          }
+      }
+  }
+.card1,.card2,.card3{
+    width: 94%!important;
+    margin-left: 3%!important;
+}
+.c2_left{
+    width:100%!important;
+}
+.c2_right{
+    width:100%!important;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px solid #143553;
+}
+	}
+
+	@media (min-width: 541px) and (max-width: 960px){
+	.top_right{
+        width: 60%!important;
+        float: left!important;
+        font-size: 13px;
+        ul{
+            li{
+                span{
+                    margin-right: -100px!important;
+                  
+                }
+            }
+        }
+        li:nth-child(2){
+            .top_r{
+                span{margin-left: 70px!important;}
+            }
+        }
+        li:nth-child(3){
+            .top_r{
+                span{margin-left: 70px!important;}
+            }
+        }
+         li:nth-child(4){
+            .top_r{
+                span{margin-left: 70px!important;}
+            }
+        }
+    }
+     .c2_left{
+         ul{
+             li{font-size: 15px!important;}
+         }
+     }  
+	}
+	@media screen and (min-width: 961px){
+		
+	}
+
+
+
+
+
+
 .mylabel{
       overflow-x: hidden;
         overflow-y: scroll;

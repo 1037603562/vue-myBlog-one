@@ -174,6 +174,33 @@ import backtop from '../components/Backtop.vue'
 </script>
 
 <style lang="scss" scoped>
+@media screen and (max-width: 540px){
+
+      .el-input{
+        width: 29%!important;
+      }
+     .ct{
+            //  margin-left: -179px!important;
+            //  margin-top: 70px!important;
+               margin-left: -28px!important;
+            
+     }
+ 
+	}
+
+	@media (min-width: 541px) and (max-width: 960px){
+	  .ct{
+          margin-top: 20px!important;
+      }
+	}
+	@media screen and (min-width: 961px){
+		
+	}
+
+
+
+
+
 .mylabel{
     
       overflow-x: hidden;

@@ -122,6 +122,35 @@ import backtop from '../components/Backtop.vue'
 </script>
 
 <style lang="scss" scoped>
+@media screen and (max-width: 540px){
+       .el-card{
+               width: 170px!important;
+                height: 200px!important;
+       }
+       .timecard_left{
+           position: absolute;
+           left:-230px!important;
+       }
+       .mycards_h{
+           font-size: 15px!important;
+          margin-left: -30px!important;
+          width: 100px;;
+       }
+	}
+	@media (min-width: 541px) and (max-width: 960px){
+	
+          
+       
+	}
+	@media screen and (min-width: 961px){
+		
+	}
+
+
+
+
+
+
 .archives{
       overflow-x: hidden;
         overflow-y: scroll;

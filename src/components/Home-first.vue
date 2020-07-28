@@ -153,6 +153,11 @@ import myBottom from '../components/myBottom.vue'
                 width:90%!important;
             }
         }
+        .bt{
+            a{
+                .el-button{margin-bottom: 10px!important;}
+            }
+        }
 	}
 	@media (min-width: 541px) and (max-width: 960px){
 		.navs{

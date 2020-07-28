@@ -97,6 +97,83 @@ import backtop from '../components/Backtop.vue'
 </script>
 
 <style lang="scss" scoped>
+@media screen and (max-width: 540px){
+    .el-button{
+        margin-bottom: 30px!important;
+    }
+        .li_first{
+            a{
+                left:70px!important;
+            }
+        }
+        li:nth-child(3){
+           a{
+               position: absolute;
+                left:-380px!important;
+           }
+        }
+         li:nth-child(4){
+           a{
+               position: absolute;
+                left:-270px!important;
+           }
+        }
+          li:nth-child(5){
+           a{
+               position: absolute;
+                left:-520px!important;
+                top: -70px;
+           }
+        }
+         li:nth-child(7){
+           a{
+               position: absolute;
+                left:-650px!important;
+                top: -70px;
+           }
+        }
+         li:nth-child(8){
+           a{
+               position: absolute;
+                left:-60px!important;
+                top: 200px;
+
+           }
+        }
+
+
+	}
+	@media (min-width: 541px) and (max-width: 960px){
+		.c_top{
+            margin-left: 240px!important;
+        }
+        .li_first{
+            a{
+                left:170px!important;
+            }
+        }
+       
+	}
+	@media screen and (min-width: 961px){
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .mylabel{
       overflow-x: hidden;
         overflow-y: scroll;
