@@ -45,6 +45,32 @@ Vue.use(VueRouter)
       path:'/friends',
       component: () => import('../components/Friends.vue')
     },
+    {
+      path:'/myvue',
+      component: () => import('../components/Myvue.vue')
+    },
+    // **************************
+    {
+      path:'/myvuex',
+      component: () => import('../components/study/Myvuex.vue')
+    },
+    {
+      path:'/vfor',
+      component: () => import('../components/study/Vfor.vue')
+    },
+    {
+      path:'/chuanzhi',
+      component: () => import('../components/study/Chuanzhi.vue')
+    },
+    {
+      path:'/Myaddrouters',
+      component: () => import('../components/study/Myaddrouters.vue')
+    },
+    {
+      path:'/donghua',
+      component: () => import('../components/study/donghua.vue')
+    },
+    //********************* */
  
 ]
 

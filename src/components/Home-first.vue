@@ -77,15 +77,17 @@
                 </el-card>
 
                  <el-card :body-style="{ padding: '0px' }" class="ecd">
-                     <img src="../assets/img/5.jpg" class="image">
-                     <h3>vue基础知识</h3>
-                    <div style="padding: 14px;">
-                        <span>好吃的汉堡</span>
-                        <div class="bottom clearfix">
-                        <time class="time">{{ 4 }}</time>
-                        <el-button type="text" class="button">操作按钮</el-button>
+                     <router-link to="/myvue">
+                        <img src="../assets/img/5.jpg" class="image">
+                        <h3>vue基础知识</h3>
+                        <div style="padding: 14px;">
+                            <span>好吃的汉堡</span>
+                            <div class="bottom clearfix">
+                            <time class="time">{{ 4 }}</time>
+                            <el-button type="text" class="button">操作按钮</el-button>
+                            </div>
                         </div>
-                    </div>
+                     </router-link>
                 </el-card>
 
                  <el-card :body-style="{ padding: '0px' }" class="ecd">
