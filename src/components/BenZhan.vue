@@ -10,16 +10,16 @@
                     <el-card>
                          <!-- 内容 -->
                    <h3 id="nr-1">1.nav部分鼠标滚动下拉 保持在顶部</h3>
-                   <img src="../assets/img/benzhan/scroll.jpg" alt="" srcset="">
+                   <img src="../assets/img/benzhan/scroll.jpg" alt="" srcset=""  class="img_one">
                    <span> 配合 :class="this.num >100 ? 'navAfterStyle' : '' 使用</span>
                    <p> scrollTop 值是这个元素的顶部到它的最顶部可见内容(的顶部)的距离的度量，当一个元素的内容没有产生垂直方向的滚动条，那么它的 scrollTop 值为0。</p>
                    <p>所以如果出现scrollTop的值是undefined，请检查最外层的包裹元素是否设置了高度</p>
 
                     <h3 id="nr-2">2.如何调用第三方icon图标（阿里的icon）</h3>
-                     <img src="../assets/img/benzhan/aliicon.png" alt="" srcset="" class="icon_style">
+                     <img src="../assets/img/benzhan/aliicon.png" alt="" srcset="" class="icon_style img_two">
                     
                     <h3 id="nr-3">3.vue a标签锚点跳转不改变路由的方式</h3>
-                     <img src="../assets/img/benzhan/aChangeRouter.png" alt="" srcset="" class="icon_style">
+                     <img src="../assets/img/benzhan/aChangeRouter.png" alt="" srcset="" class="icon_style img_three">
 
                       <h3 id="nr-4">4.本页面的页脚还有问题没有解决</h3>
                       <p>暂时使用.offsetHeight获取到卡片的高度 然后将底部margin-top=卡片高度</p>
@@ -101,6 +101,40 @@ import backtop from '../components/Backtop.vue'
 </script>
 
 <style lang="scss" scoped>
+@media screen and (max-width: 540px){
+  .el-card{
+      width: 100%!important;
+      padding-left: 0!important;
+      margin-left: -50px!important;
+  }
+   .mulu{
+       display: none;
+       
+   }
+
+     
+	}
+
+	@media (min-width: 541px) and (max-width: 960px){
+	.mulu{
+          display: none;
+    }  
+      img{
+        margin-left: -10px;
+    } 
+    .el-card{
+      width: 100%!important;
+      padding-left: 0!important;
+      margin-left: -50px!important;
+  }
+	}
+	@media screen and (min-width: 961px){
+		
+	}
+
+
+
+
 .mygithub{
       overflow-x: hidden;
         overflow-y: scroll;

@@ -132,7 +132,10 @@ import backtop from '../components/Backtop.vue'
        }
        .timecard_left{
            position: absolute;
-           left:-230px!important;
+           left:-200px!important;
+       }
+       .timecard_right{
+            left:-18px!important;
        }
        .mycards_h{
            font-size: 15px!important;

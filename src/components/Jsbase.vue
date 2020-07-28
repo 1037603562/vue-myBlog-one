@@ -73,6 +73,39 @@ import backtop from '../components/Backtop.vue'
 </script>
 
 <style lang="scss" scoped>
+@media screen and (max-width: 540px){
+  .el-card{
+      width: 100%!important;
+      padding-left: 0!important;
+      margin-left: -50px!important;
+  }
+   .mulu{
+       display: none;
+       
+   }
+
+     
+	}
+
+	@media (min-width: 541px) and (max-width: 960px){
+	.mulu{
+          display: none;
+    }  
+      img{
+        margin-left: -10px;
+    } 
+    .el-card{
+      width: 100%!important;
+      padding-left: 0!important;
+      margin-left: -50px!important;
+  }
+	}
+	@media screen and (min-width: 961px){
+		
+	}
+
+
+
 .jsbase{
       overflow-x: hidden;
         overflow-y: scroll;
