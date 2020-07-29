@@ -8,6 +8,7 @@
         <div class="mybody">
                 <div class="my_card">
                     <el-card>
+                        <el-button><a href="https://www.liaoxuefeng.com/wiki/1022910821149312" target="_blank">js基础知识外链</a></el-button>
                         <h3 id="nr-1">1.localstorage和sessionstorage的区别</h3>
                         <img src="../assets/img/js/localstoreageAndsessionstorage.png" alt="" srcset="">
                     </el-card>

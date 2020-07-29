@@ -36,7 +36,7 @@
                   // 这种 调用 mutations 方法的格式，和 this.$emit('父组件中方法名')</br>
                   subtract(state, obj) {</br>
                     // 注意： mutations 的 函数参数列表中，最多支持两个参数，其中，参数1： 是 state 状态； 参数2： 通过 commit 提交过来的参数；</br>
-                    console.log(obj)</br>
+                   </br>
                     state.count -= (obj.c + obj.d)</br>
                   }</br>
                 },</br></br></br></br>

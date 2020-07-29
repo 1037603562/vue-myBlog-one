@@ -81,7 +81,7 @@ import backtop from '../components/Backtop.vue'
              getScroll(e) {//获取鼠标滚动后的数值
                
                 this.num =e.target.scrollTop
-                console.log(this.num)
+               // console.log(this.num)
             }
         },
          mounted () {

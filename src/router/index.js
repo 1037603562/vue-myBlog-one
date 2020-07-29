@@ -18,6 +18,10 @@ Vue.use(VueRouter)
       component: () => import('../components/Mylabel.vue')
     },
     {
+      path:'/reacthome',
+      component: () => import('../components/react/Reacthome.vue')
+    },
+    {
       path:'/archives',
       component: () => import('../components/Archives.vue')
     },
@@ -71,7 +75,10 @@ Vue.use(VueRouter)
       component: () => import('../components/study/donghua.vue')
     },
     //********************* */
- 
+    {
+      path:'/vuebase',
+      component: () => import('../components/vues/vuebase.vue')
+    },
 ]
 
 const router = new VueRouter({

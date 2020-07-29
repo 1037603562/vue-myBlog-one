@@ -30,12 +30,14 @@
                        </a>
                    </li>
                 </router-link>
-                    <li>
+                <router-link to="/reacthome">
+                     <li>
                        <a href="#">
                            <i class="el-icon-s-shop"></i>
-                           <span>分类</span>
+                           <span>前端框架</span>
                        </a>
                    </li>
+                </router-link>
              <router-link to="/archives">
                     <li>
                        <a href="#">

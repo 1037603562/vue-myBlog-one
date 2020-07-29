@@ -16,9 +16,12 @@
                         <el-button type="primary" @click="studyv_sendMsg">父子组件传值</el-button>
                         <el-button type="primary" @click="study_addRouters">addRouters权限管理</el-button>
                         <el-button type="primary" @click="study_animal">css3动画相关</el-button>
+
+                        <el-button><a href="https://blog.csdn.net/Spirit_Breeze/article/details/81949908" target="_Blank">vue基础知识外链</a></el-button>
+                            
                     </el-card>
                 </div>
-                <div class="mulu" :class="this.num >100 ? 'moveMulu' : ''">
+                <!-- <div class="mulu" :class="this.num >100 ? 'moveMulu' : ''">
                     <div class="mulu_m">
                              <div class="ml-top">
                                 <i class="el-icon-tickets"></i>
@@ -32,7 +35,7 @@
                                 
                             </div>
                     </div>
-                </div>
+                </div> -->
 
         </div>
         <!-- 底部 -->
@@ -57,14 +60,15 @@ import backtop from '../components/Backtop.vue'
             }
         },
         methods:{
+         
              getScroll(e) {//获取鼠标滚动后的数值
                
                 this.num =e.target.scrollTop
-                console.log(this.num)
+                //console.log(this.num)
             },
 
              studyVuex(){
-      console.log('123')
+      //console.log('123')
       this.$router.push('/myvuex')
       
     },
@@ -155,7 +159,7 @@ import backtop from '../components/Backtop.vue'
             
             .el-card{
                 width: 890px;
-                // height: 890px;
+                 height: 890px;
                 border-radius: 20px;
                 padding-left: 25px;
             }
