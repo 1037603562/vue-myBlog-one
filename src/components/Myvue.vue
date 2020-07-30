@@ -162,6 +162,9 @@ import backtop from '../components/Backtop.vue'
                  height: 890px;
                 border-radius: 20px;
                 padding-left: 25px;
+                .el-button{
+                    margin-bottom: 20px;
+                }
             }
         }
         .mulu{

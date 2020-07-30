@@ -55,11 +55,7 @@
                          <img src="../assets/img/3.jpg" class="image">
                         <h3>js基础知识</h3>
                         <div style="padding: 14px;">
-                            <span>好吃的汉堡</span>
-                            <div class="bottom clearfix">
-                            <time class="time">{{ 2 }}</time>
-                            <el-button type="text" class="button">操作按钮</el-button>
-                            </div>
+                            <p>js基础知识</p>
                         </div>
                     </router-link>
                 </el-card>
@@ -68,11 +64,7 @@
                      <img src="../assets/img/4.jpg" class="image">
                      <h3>jquery基础知识</h3>
                     <div style="padding: 14px;">
-                        <span>css基础知识</span>
-                        <div class="bottom clearfix">
-                        <time class="time">{{ 3 }}</time>
-                        <el-button type="text" class="button">操作按钮</el-button>
-                        </div>
+                        <p>jquery基础知识</p>
                     </div>
                 </el-card>
 
@@ -81,25 +73,19 @@
                         <img src="../assets/img/5.jpg" class="image">
                         <h3>vue基础知识</h3>
                         <div style="padding: 14px;">
-                            <span>好吃的汉堡</span>
-                            <div class="bottom clearfix">
-                            <time class="time">{{ 4 }}</time>
-                            <el-button type="text" class="button">操作按钮</el-button>
-                            </div>
+                            <p>vue基础知识</p>
                         </div>
                      </router-link>
                 </el-card>
 
                  <el-card :body-style="{ padding: '0px' }" class="ecd">
-                     <img src="../assets/img/6.jpg" class="image">
-                     <h3>html相关知识</h3>
-                    <div style="padding: 14px;">
-                        <span>好吃的汉堡</span>
-                        <div class="bottom clearfix">
-                        <time class="time">{{ 5 }}</time>
-                        <el-button type="text" class="button">操作按钮</el-button>
-                        </div>
-                    </div>
+                     <router-link to="/myhtmlcss">
+                            <img src="../assets/img/6.jpg" class="image">
+                            <h3>htmlcss相关知识</h3>
+                            <div style="padding: 14px;">
+                                <p>htmlcss相关知识</p>
+                            </div>
+                     </router-link>
                 </el-card>
 
                  <el-card :body-style="{ padding: '0px' }" class="ecd">

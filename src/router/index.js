@@ -46,6 +46,10 @@ Vue.use(VueRouter)
       component: () => import('../components/Jsbase.vue')
     },
     {
+      path:'/myhtmlcss',
+      component: () => import('../components/Myhtmlcss.vue')
+    },
+    {
       path:'/friends',
       component: () => import('../components/Friends.vue')
     },

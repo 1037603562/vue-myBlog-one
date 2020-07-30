@@ -9,16 +9,28 @@
                 <div class="my_card">
                     <!-- html相关知识 -->
                     <el-card>
-                        <h1 style="margin-left:40%;">react框架相关知识</h1>
+                        <h1 style="margin-left:40%;">html相关知识</h1>
                         <!-- <h3 id="nr-1">1.怎么将自己的项目上传至github</h3> -->
                         
 
                     </el-card>
                     <!-- css相关知识 -->
                     <el-card style="margin-top:20px;">
-                        <h1 style="margin-left:40%;">其他框架相关知识</h1>
+                        <h1 style="margin-left:40%;">css相关知识</h1>
+                        <h3 id="nr-1">1.媒体查询</h3>
+                        <p>媒体查询可以用来进行响应式页面设计，可以使其分别在pc端，pad端和手机端显示相应的页面</p>
+                        <p>媒体查询其具体代码如下：</p>
                         <div>
-                          暂无
+                            @media screen and (max-width: 540px){</br>
+                                            </br>
+                                }</br>
+
+                                @media (min-width: 541px) and (max-width: 960px){</br>
+                                            </br>
+                                }</br>
+                                @media screen and (min-width: 961px){</br>
+                                            </br>
+                                }</br>
                         </div>
                         
 
@@ -51,9 +63,9 @@
 </template>
 
 <script>
-import myNav from '../../components/mynav.vue'
-import myBottom from '../../components/myBottom.vue'
-import backtop from '../../components/Backtop.vue'
+import myNav from '../components/mynav.vue'
+import myBottom from '../components/myBottom.vue'
+import backtop from '../components/Backtop.vue'
 
     export default {
         data() {
@@ -128,7 +140,7 @@ import backtop from '../../components/Backtop.vue'
     .mytop{
         width: 100%;
         height: 380px;
-        background: url(../../assets/img/bgc/darksky.jpg) no-repeat top center;
+        background: url(../assets/img/bgc4.jpg) no-repeat top center;
 		background-size: cover;
       
        
