@@ -28,11 +28,11 @@
                     <div class="mulu_m">
                              <div class="ml-top">
                                 <i class="el-icon-tickets"></i>
-                                <label>目录</label>
+                                <label>目录1</label>
                             </div>
                             <div class="ml-body">
                                 <ul>
-                                    <li><a href="#nr-1" style="color:#425669">1.媒体查询</a></li>
+                                    <li><a href="#nr-1" style="color:#425669">1.媒体查询1</a></li>
                                    
                                 </ul>
                                 
