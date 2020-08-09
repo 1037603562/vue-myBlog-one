@@ -106,7 +106,7 @@
                             <p>ReactDOM.render(myh1,document.getElementById('app'))</p>
 
 
-                            <h3 id="nr-4">JSX语法</h3>
+                            <h3 id="nr-4">4.JSX语法</h3>
                             <p>上面的这种方式创建虚拟dom可行，但是太麻烦了，程序员一般不会使用，最好的还是html语法，react官方也是考虑到了这点，所以推荐使用JSX语法--符合xml规范的js</p>
                             <p>1.如何启用jsx语法</p>
                                     <p style="padding-left: 50px;">安装babel插件</p>
@@ -117,10 +117,10 @@
                             <p>2.在webpack.config.js中添加loader规则</p>
                                 <p>
                                       module:{//所有第三方模块配置规则</br>
-                                                  . .. rules:[</br>
-                                                    . . . . . . {test:/\.js|jsx$/,use:'babel-loader',exclude:/node_modules/}</br>
-                                                      ...... ]</br>
-                                                }</br>
+                                                  <p style="padding-left: 90px;"s>rules:[</p>
+                                                    <p style="padding-left: 120px;">{test:/\.js|jsx$/,use:'babel-loader',exclude:/node_modules/}</p>
+                                                    <p style="padding-left: 120px;">]</p>
+                                                <p style="padding-left: 90px;">}</p>
                                 </p>
                             <p>在项目根目录中创建一个.babelrc文件，并进行相关配置</p>
                             <p>
@@ -129,6 +129,19 @@
                                     "plugins": ["transform-runtime"]</br>
                                 }</br>
                             </p>
+
+
+                            <p>2.jsx语法的本质：并不是直接把jsx渲染到页面上面去，而是内部先转换成了creatElement形式，再渲染的</p>
+                            <p>3.在jsx中混合写入js表达式：在jsx语法中，要把js代码写到{ }中</p>
+                                    <span style="padding-left: 120px;">--渲染数字</span></br>
+                                    <span style="padding-left: 120px;">--渲染字符串</span></br>
+                                    <span style="padding-left: 120px;">--渲染布尔值</span></br>
+                                    <span style="padding-left: 120px;">--为属性绑定值</span></br>
+                                    <span style="padding-left: 120px;">--渲染jsx元素</span></br>
+                                    <span style="padding-left: 120px;">--渲染jsx元素数组</span></br>
+                                    <span style="padding-left: 120px;">--将普通字符串数组，转换为jsx数组并渲染到页面上【两种方案】</span></br>
+                            <img src="../../assets/img/react/img/jsx语法最基本使用示例.png" alt="">
+                            <p>4.在jsx中写注释：推荐使用{/*这是注释*/}</p>
 
 
 
@@ -168,6 +181,7 @@
                                     <li><a href="#nr-1" style="color:#425669">1.ReactJS简介</a></li>
                                     <li><a href="#nr-2" style="color:#425669">2.React中几个核心的概念</a></li>
                                     <li><a href="#nr-3" style="color:#425669">3.React项目的创建</a></li>
+                                     <li><a href="#nr-4" style="color:#425669">4.JSX语法</a></li>
                                 </ul>
                                 
                             </div>
