@@ -1,6 +1,6 @@
 <template>
   <div class="chouti">
-        <i class="el-icon-s-unfold" @click="drawer = true" type="primary" style="margin-left: 16px;" ></i>
+        <i class="el-icon-s-unfold" @click="drawer = true" type="primary" style="margin-left:-34px;" ></i>
             <el-drawer
             class="dw"
             direction="ltr"
