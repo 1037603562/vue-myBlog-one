@@ -204,7 +204,7 @@ import myBottom from '../components/myBottom.vue'
 //     background-image: url('../assets/img/zhuozi1.jpg');
 //     background-repeat: no-repeat;
 //  min-width:785px; 
-background: url(../assets/img/bgc/sun1.jpg) no-repeat top center;
+background: url(../assets/img/bgc/sun2.jpg) no-repeat top center;
 		background-size: cover;
 		background-attachment: fixed;
 		width: 100%;

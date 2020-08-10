@@ -1,9 +1,9 @@
 <template>
-     <div class="bts">
+     <div class="bts themecolor">
          <div class="bts_a">
-                 <div>Copyright © 2020 iHao | Powered by Hexo | Theme Matery</div>
-                <div>|  总访问量: 12070 次 |  总访问人数: 2612 人</div>
-                <div>本站已安全运行 120 天 4 小时 17 分钟 29 秒</div>
+                 <div style="margin-top:20px;">Copyright © 2020 iJun | Powered by Vue | Theme Matery</div>
+                <!-- <div>|  总访问量: 12070 次 |  总访问人数: 2612 人</div> -->
+                <div>本站于2020年7月上线试用</div>
          </div>
          
              <div class="lianxi2">
@@ -61,8 +61,8 @@
     background-color: pink;
     margin-top: 0px;
 
-    background-image: linear-gradient(to right,#bf30ac 0,#0f9d58 100%);
-    opacity: .8;
+    // background-image: linear-gradient(to right, #0342f4e0 0, #c3554afa 100%);
+    // opacity: .8;
     position: relative;
     div{
         color: #fff;

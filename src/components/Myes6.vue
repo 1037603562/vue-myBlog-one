@@ -8,11 +8,23 @@
         <div class="mybody">
                 <div class="my_card">
                     <el-card>
-                        <el-button><a href="https://www.liaoxuefeng.com/wiki/1022910821149312" target="_blank">js基础知识外链</a></el-button>
-                        <router-link to="/myes6"><el-button>ES6知识总结</el-button></router-link>
-                        
-                        <h3 id="nr-1">1.localstorage和sessionstorage的区别</h3>
-                        <img src="../assets/img/js/localstoreageAndsessionstorage.png" alt="" srcset="">
+                        <h3 id="nr-1">1.es6展开运算符“...”</h3>
+                            <p style="margin-left:50px;"> var o1={name:'zs'}</p>
+                            <p style="margin-left:50px;"> var o2={</p>
+                                    <p style="margin-left:100px;">age:22,</p>
+                                    <p style="margin-left:100px;"> address:'中国北京',</p>
+                                    <p style="margin-left:100px;">phone:13522222222</p>
+                            <p style="margin-left:100px;">}</p>
+
+                            <p>(1)现有需求：将o2身上所有属性都传递给o1</p>
+                            <p style="margin-left:50px;"> var o1={</p>
+                                <p style="margin-left:100px;">name:'zs',</p>
+                                <p style="margin-left:100px;">...o2//3个点代表展开，即展开o2,o2身上有几个属性就展开并交给o1去使用</p>
+                            <p style="margin-left:100px;">}</p>
+
+
+                            <h3 id="nr-2">2.es6新特性关键字Class</h3>
+                            <img src="../assets/img/es6/es6Class关键字.png" alt="">
                     </el-card>
                 </div>
                 <div class="mulu" :class="this.num >100 ? 'moveMulu' : ''">
@@ -23,9 +35,9 @@
                             </div>
                             <div class="ml-body">
                                 <ul>
-                                    <li><a href="#nr-1" style="color:#425669">1.localstorage和sessionstorage的区别</a></li>
-                                    <!-- <li><a href="#nr-2" style="color:#425669">2.github秘钥相关</a></li>
-                                    <li><a href="#nr-3" style="color:#425669">3.上传至GitHub所需语句</a></li>
+                                    <li><a href="#nr-1" style="color:#425669">1.es6展开运算符“...”</a></li>
+                                    <li><a href="#nr-2" style="color:#425669">2.es6新特性关键字Class</a></li>
+                                      <!--<li><a href="#nr-3" style="color:#425669">3.上传至GitHub所需语句</a></li>
                                     <li><a href="#nr-4" style="color:#425669">4.更新代码到github</a></li> -->
 
                                 </ul>
@@ -139,6 +151,7 @@ import backtop from '../components/Backtop.vue'
             .el-card{
                 width: 890px;
                 // height: 890px;
+                min-height: 500px;
                 border-radius: 20px;
                 padding-left: 25px;
             }

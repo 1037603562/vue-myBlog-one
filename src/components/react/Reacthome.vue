@@ -142,10 +142,46 @@
                                     <span style="padding-left: 120px;">--将普通字符串数组，转换为jsx数组并渲染到页面上【两种方案】</span></br>
                             <img src="../../assets/img/react/img/jsx语法最基本使用示例.png" alt="">
                             <p>4.在jsx中写注释：推荐使用{/*这是注释*/}</p>
+                            <p>5.为jsx中的元素添加class类名：需要使用className来替代class;htmlFor替换label的for属性</p>
+                            <P>6.在jsx创建dom的时候，所有的节点，必须有唯一的根元素进行包裹</P>
+                            <p>7.在jsx语法中，标签必须成对出现，如果是单标签，则必须自闭和</p>
+                            <p style="color:#aaa;font-size:13px;">当编译引擎在编译jsx代码的时候，如果遇到&lt;那么就把它动作html代码去编译，如果遇到了{}就吧花括号内部的代码当中普通的js代码去编译</p>
 
+                            <h3 id="nr-5">5.组件的创建</h3>
+                            <p>第一种创建组件的方式：构造函数创建组件</p>
+                                    <p style="padding-left: 120px;">function Hello(props){//组件中props永远是只读的不可修改</p>
+                                        <p style="padding-left: 150px;font-size:13px;color:#aaa;">//如果在一个组件中return一个null 则表示此组件是空的 什么都不渲染</p>
+                                        <p style="padding-left: 150px;font-size:13px;color:#aaa;">//return null</p>
+                                        <p style="padding-left: 150px;">return &lt;div&gt;{props.name}--{props.age}--{props.sex}&lt;/div&gt;//在组件中必须返回一个合法的jsx虚拟dom元素</p>
+                                    <p style="padding-left: 120px;">}</p>
 
+                                    <p>//在组件中接收外部传过来的值 如何用这个值（在形参列表中接收，然后直接点出来 ）</p>
 
+                                   <p> const dog = {//1、外部值</p>
+                                        <p style="padding-left: 120px;">name:'大黄',</p>
+                                        <p style="padding-left: 120px;"> age:3,</p>
+                                        <p style="padding-left: 120px;"> sex:'雄'</p>
+                                   <p style="padding-left: 100px;"> }</p>
 
+                                  <p>  ReactDOM.render(&lt;div&gt;</p>
+                                                  <p style="padding-left: 120px;"> &lt;Hello name={dog.name} age={dog.age} sex={dog.sex}&gt;&lt;/Hello&gt;</p>
+                                                  <p style="padding-left: 120px;">  &lt;/div&gt;,document.getElementById('app'))</p>
+
+                                <p>将组件抽离成单独的jsx文件</p>
+                                <p>和vue抽离组件是一样的</p>
+                                <p>1.新建一个Hi.jsx文件</p>
+                                <p>2.在新建文件当中录入import React from 'react'（必须要该导入）</p>
+                                <p>3.将之前构造函数创建的组件放到Hi.jsx文件当中</p>
+                                <p>4.在index.js当中引入Hi.jsx文件--import Hi from '../src/component/Hi.jsx'</p>
+                                <p>将Hi组件以标签的形式放入到ReactDOM.render当中即可</p>
+                                <p>具体如下图所示：</p>
+                                <img src="../../assets/img/react/img/抽离组件到jsx文件当中.png" alt="">
+
+                                <h3>导入组件时省略后缀名jsx</h3>
+                                <p>只需要在webpack.config.js文件中新增如下配置即可</p>
+                                <p> resolve:{</p>
+                                    <p style="margin-left:50px;">extensions:['.js','.jsx','.json']//表示 这几个文件的后缀名 可以省略不写</p>
+                                <p>}</p>
 
 
 
@@ -181,7 +217,8 @@
                                     <li><a href="#nr-1" style="color:#425669">1.ReactJS简介</a></li>
                                     <li><a href="#nr-2" style="color:#425669">2.React中几个核心的概念</a></li>
                                     <li><a href="#nr-3" style="color:#425669">3.React项目的创建</a></li>
-                                     <li><a href="#nr-4" style="color:#425669">4.JSX语法</a></li>
+                                    <li><a href="#nr-4" style="color:#425669">4.JSX语法</a></li>
+                                    <li><a href="#nr-5" style="color:#425669">5.组件的创建</a></li>
                                 </ul>
                                 
                             </div>
@@ -234,7 +271,11 @@ import backtop from '../../components/Backtop.vue'
   .el-card{
       width: 100%!important;
       padding-left: 0!important;
-      margin-left: -50px!important;
+      margin-left: -95px!important;
+      margin-right: -30px!important;
+      h1{
+          margin-left: 0!important;
+      }
   }
    .mulu{
        display: none;

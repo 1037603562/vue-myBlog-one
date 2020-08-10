@@ -13,3 +13,8 @@ a{
     text-decoration: none;
     color: #cdcace;
 }
+/* 主题色 放在这里便于修改 */
+.themecolor{
+    background-image:linear-gradient(to right, #03f4a6e0 0, #574ac3fa 100%);
+    opacity: .8;
+}

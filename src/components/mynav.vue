@@ -1,5 +1,5 @@
 <template>
-    <div class="navsBoss" :class="this.num >100 ? 'navAfterStyle' : ''">
+    <div class="navsBoss" :class="this.num >100 ? 'themecolor' : ''">
        <div class="navs" ref="navsRef" >
            <!-- 抽屉 -->
             <chouti class="cd"></chouti>
@@ -137,10 +137,10 @@ import chouti from '../components/chouti.vue'
                          margin-left: -120px!important;
                  }
              }
-             .navAfterStyle{//nav头部鼠标滚动后样式
-            opacity:1;
-            background-image: linear-gradient(to right,#bf30ac 0,#0f9d58 100%);
-        }
+        //      .navAfterStyle{//nav头部鼠标滚动后样式
+        //     opacity:1;
+        //     background-image: linear-gradient(to right,#bf30ac 0,#0f9d58 100%);
+        // }
 	}
 	@media (min-width: 541px) and (max-width: 960px){
 		.navs{
@@ -159,10 +159,10 @@ import chouti from '../components/chouti.vue'
              }
         }
        
-        .navAfterStyle{//nav头部鼠标滚动后样式
-            opacity:1;
-            background-image: linear-gradient(to right,#bf30ac 0,#0f9d58 100%);
-        } 
+        // .navAfterStyle{//nav头部鼠标滚动后样式
+        //     opacity:1;
+        //     background-image: linear-gradient(to right,#bf30ac 0,#0f9d58 100%);
+        // } 
 	}
 	@media screen and (min-width: 961px){
 		.navs{
@@ -179,10 +179,10 @@ import chouti from '../components/chouti.vue'
                 }
             }
         }
-        .navAfterStyle{//nav头部鼠标滚动后样式
-    background-image: linear-gradient(to right,#bf30ac 0,#0f9d58 100%);
-    opacity: .8;
-}
+//         .navAfterStyle{//nav头部鼠标滚动后样式
+//     background-image:linear-gradient(to right, #0342f4e0 0, #c3554afa 100%);
+//     opacity: .8;
+// }
 	}
 
 

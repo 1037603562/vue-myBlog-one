@@ -46,6 +46,10 @@ Vue.use(VueRouter)
       component: () => import('../components/Jsbase.vue')
     },
     {
+      path:'/myes6',
+      component: () => import('../components/Myes6.vue')
+    },
+    {
       path:'/myhtmlcss',
       component: () => import('../components/Myhtmlcss.vue')
     },
