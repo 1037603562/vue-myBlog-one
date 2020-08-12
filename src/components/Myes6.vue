@@ -25,6 +25,23 @@
 
                             <h3 id="nr-2">2.es6新特性关键字Class</h3>
                             <img src="../assets/img/es6/es6Class关键字.png" alt="">
+
+                            <h3 id="nr-3">3.es6新特性关键字Class子类继承父类</h3>
+                            <img src="../assets/img/es6/es6Class关键字子类继承父类.png" alt="">
+
+                            <h3 id="nr-4">4.class构造器中super函数使用说明</h3>
+                            <img src="../assets/img/es6/class构造器中super函数使用说明.png" alt="">
+
+                                <h3 id="nr-5">5.class--为子类挂载独有的实例属性和实例方法</h3>
+                            <img src="../assets/img/es6/class-为子类挂载独有的实例属性和实例方法.png" alt="">
+
+
+
+
+
+
+
+
                     </el-card>
                 </div>
                 <div class="mulu" :class="this.num >100 ? 'moveMulu' : ''">
@@ -37,9 +54,9 @@
                                 <ul>
                                     <li><a href="#nr-1" style="color:#425669">1.es6展开运算符“...”</a></li>
                                     <li><a href="#nr-2" style="color:#425669">2.es6新特性关键字Class</a></li>
-                                      <!--<li><a href="#nr-3" style="color:#425669">3.上传至GitHub所需语句</a></li>
-                                    <li><a href="#nr-4" style="color:#425669">4.更新代码到github</a></li> -->
-
+                                    <li><a href="#nr-3" style="color:#425669">3.es6新特性关键字Class子类继承父类</a></li>
+                                    <li><a href="#nr-4" style="color:#425669">4.class构造器中super函数使用说明</a></li>
+                                     <li><a href="#nr-5" style="color:#425669">5.class--为子类挂载独有的实例属性和实例方法</a></li>
                                 </ul>
                                 
                             </div>

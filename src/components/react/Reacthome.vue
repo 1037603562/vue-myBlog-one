@@ -184,8 +184,19 @@
                                 <p>}</p>
 
 
+                                <p>第二种方式创建组件：基于class关键字创建组件</p>
+                                <div  style="border:1px solid #ccc">
+                                    <p style="padding-left: 120px;">class 组件名称 extends React.Component{</p>
+                                        <p style="padding-left: 200px;">render(){//在组件内部 必须有render函数</p>
+                                            <p style="padding-left: 250px;">return &lt;div&gt;这是class创建的组件&lt;/div&gt;//在render函数中必须返回合法的jsx虚拟dom结构</p>
+                                        <p style="padding-left: 200px;">}</p>
+                                   <p style="padding-left: 120px;"> }</p>
+                                </div>
 
 
+                                <p>1.class创建的组件传递props参数并直接使用this.props来使用</p>
+                                
+                                <img src="../../assets/img/react/img/class创建的组件传递props参数并直接使用this.props来使用.png" alt="">
 
 
 
