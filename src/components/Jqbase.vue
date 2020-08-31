@@ -1,5 +1,5 @@
 <template>
-    <div class="myvue">
+    <div class="jsbase">
         <!-- 头部 -->
         <div class="mytop">
             <myNav></myNav>
@@ -8,23 +8,12 @@
         <div class="mybody">
                 <div class="my_card">
                     <el-card>
-                        <!-- <h3 id="nr-1">1.怎么将自己的项目上传至github</h3>
-                        <img src="../assets/img/mygithub/怎么将自己的项目上传至github - 简书.png" alt="" srcset="">
-                         -->
-                        <el-button type="primary" @click="studyVuex">vuex资料</el-button>
-                        <el-button type="primary" @click="studyv_for">v-for倒序显示</el-button>
-                        <el-button type="primary" @click="studyv_sendMsg">父子组件传值</el-button>
-                        <el-button type="primary" @click="study_addRouters">addRouters权限管理</el-button>
-                        <el-button type="primary" @click="study_animal">css3动画相关</el-button>
+                       
+                        
 
-                        <el-button><a href="https://blog.csdn.net/Spirit_Breeze/article/details/81949908" target="_Blank">vue基础知识外链</a></el-button>
-
-
-                          <h3>1.vue生命周期函数</h3>  
-                          <img src="../assets/vue生命周期函数.png" alt="">
                     </el-card>
                 </div>
-                <!-- <div class="mulu" :class="this.num >100 ? 'moveMulu' : ''">
+                <div class="mulu" :class="this.num >100 ? 'moveMulu' : ''">
                     <div class="mulu_m">
                              <div class="ml-top">
                                 <i class="el-icon-tickets"></i>
@@ -32,13 +21,16 @@
                             </div>
                             <div class="ml-body">
                                 <ul>
-                                    <li><a href="#nr-1" style="color:#425669">1.怎么将自己的项目上传至github</a></li>
-                                    
+                                    <li><a href="#nr-1" style="color:#425669">1.localstorage和sessionstorage的区别</a></li>
+                                    <!-- <li><a href="#nr-2" style="color:#425669">2.github秘钥相关</a></li>
+                                    <li><a href="#nr-3" style="color:#425669">3.上传至GitHub所需语句</a></li>
+                                    <li><a href="#nr-4" style="color:#425669">4.更新代码到github</a></li> -->
+
                                 </ul>
                                 
                             </div>
                     </div>
-                </div> -->
+                </div>
 
         </div>
         <!-- 底部 -->
@@ -58,35 +50,16 @@ import backtop from '../components/Backtop.vue'
     export default {
         data() {
             return {
-                targets: '.myvue',
+                targets: '.jsbase',
                 num:null,
             }
         },
         methods:{
-         
              getScroll(e) {//获取鼠标滚动后的数值
                
                 this.num =e.target.scrollTop
-                //console.log(this.num)
-            },
-
-             studyVuex(){
-      //console.log('123')
-      this.$router.push('/myvuex')
-      
-    },
-    studyv_for(){
-       this.$router.push('/vfor')
-    },
-     studyv_sendMsg(){
-       this.$router.push('/chuanzhi')
-    },
-     study_addRouters(){
-       this.$router.push('/Myaddrouters')
-    },
-     study_animal(){
-       this.$router.push('/donghua')
-    },
+                console.log(this.num)
+            }
         },
          mounted () {
              window.addEventListener('scroll', this. getScroll, true);
@@ -133,12 +106,13 @@ import backtop from '../components/Backtop.vue'
 	}
 
 
-.myvue{
+
+.jsbase{
       overflow-x: hidden;
         overflow-y: scroll;
     
         }
-.myvue{
+.jsbase{
     
 
     background-color: #e9e9e9;
@@ -162,12 +136,9 @@ import backtop from '../components/Backtop.vue'
             
             .el-card{
                 width: 890px;
-                //  height: 890px;
+                // height: 890px;
                 border-radius: 20px;
                 padding-left: 25px;
-                .el-button{
-                    margin-bottom: 20px;
-                }
             }
         }
         .mulu{

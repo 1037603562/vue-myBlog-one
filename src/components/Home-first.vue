@@ -61,11 +61,13 @@
                 </el-card>
 
                  <el-card :body-style="{ padding: '0px' }" class="ecd">
-                     <img src="../assets/img/4.jpg" class="image">
-                     <h3>jquery基础知识</h3>
-                    <div style="padding: 14px;">
-                        <p>jquery基础知识</p>
-                    </div>
+                    <router-link to="/jqbase">
+                         <img src="../assets/img/4.jpg" class="image">
+                        <h3>jquery基础知识</h3>
+                        <div style="padding: 14px;">
+                            <p>jquery基础知识</p>
+                        </div>
+                    </router-link>
                 </el-card>
 
                  <el-card :body-style="{ padding: '0px' }" class="ecd">

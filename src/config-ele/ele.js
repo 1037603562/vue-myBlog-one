@@ -20,6 +20,8 @@ import {
     Submenu,
     MenuItem,
     MenuItemGroup,
+    Image,
+    InfiniteScroll,
 } from 'element-ui';
 
 
@@ -42,3 +44,5 @@ Vue.use(Menu);
 Vue.use(Submenu);
 Vue.use(MenuItem);
 Vue.use(MenuItemGroup);
+Vue.use(Image);
+Vue.use(InfiniteScroll);

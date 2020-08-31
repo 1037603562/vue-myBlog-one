@@ -54,6 +54,9 @@
                         <p>4. 提供了无缝转到 ReactNative 上的开发体验，让我们技术能力得到了拓展；增强了我们的核心竞争力</p>
 
 
+
+<!-- ********************************************************************************************************************************* -->
+
                         <h3 id="nr-2">2.React中几个核心的概念</h3>
                         <h3>虚拟DOM（Virtual Document Object Model）</h3>
                         <p>- DOM的本质是什么：就是用JS表示的UI元素</p>
@@ -75,6 +78,9 @@
 
                         <h3>虚拟DOM概念的理解</h3>
                         <img src="../../assets/img/react/img/React中虚拟DOM的概念.png" alt="">
+
+<!-- ********************************************************************************************************************************* -->
+
 
 
                         <h3 id="nr-3">React项目的创建</h3>
@@ -104,6 +110,10 @@
                             <p>//参数1 要渲染的那个虚拟dom</p>
                             <p>//参数2 指定页面上的一个容器-第二步</p>
                             <p>ReactDOM.render(myh1,document.getElementById('app'))</p>
+
+
+<!-- ********************************************************************************************************************************* -->
+
 
 
                             <h3 id="nr-4">4.JSX语法</h3>
@@ -146,6 +156,13 @@
                             <P>6.在jsx创建dom的时候，所有的节点，必须有唯一的根元素进行包裹</P>
                             <p>7.在jsx语法中，标签必须成对出现，如果是单标签，则必须自闭和</p>
                             <p style="color:#aaa;font-size:13px;">当编译引擎在编译jsx代码的时候，如果遇到&lt;那么就把它动作html代码去编译，如果遇到了{}就吧花括号内部的代码当中普通的js代码去编译</p>
+
+<!-- ********************************************************************************************************************************* -->
+
+
+
+
+
 
                             <h3 id="nr-5">5.组件的创建</h3>
                             <p>第一种创建组件的方式：构造函数创建组件</p>
@@ -197,6 +214,114 @@
                                 <p>1.class创建的组件传递props参数并直接使用this.props来使用</p>
                                 
                                 <img src="../../assets/img/react/img/class创建的组件传递props参数并直接使用this.props来使用.png" alt="">
+                                <img src="../../assets/img/react/img/两种组件创建的对比.jpg" alt="">
+                                <p>class创建的组件中的this.state</p>
+                                <img src="../../assets/img/react/img/class创建的组件中的this.state.png" alt="">
+
+<!-- ********************************************************************************************************************************* -->
+
+
+
+                                   <h3 id="nr-6">6.在组件中使用style行内样式</h3>
+                                   <p>组件中使用行内样式在style=后面需要加双大括号才可以，如下</p>
+                                    <img src="../../assets/img/react/img/组件行内样式用法.png" alt="">
+
+<!-- ********************************************************************************************************************************* -->
+
+
+
+                                 <h3 id="nr-7">7.在组件中使用css样式表美化html</h3>
+                                <p>1.新建样式表文件commentfather.css如下：</p>
+                                <img src="../../assets/img/react/img/新建样式表.png" alt="">
+                                <p>2.在组件中导入样式表：import cssobj from '../css/commentfather.css'</p>
+                                <p>3.在需要添加样式的html上添加样式类： &lt;h3 className={cssobj.title} &gt;评论组件&lt;/h3&gt;</p>
+                                <p>4.安装解析csss用的loader：cnpm i style-loader css-loader -D</p>
+                                <p>5.在webpack.config.js中配置loader： {test:/\.css$/,use:['style-loader','css-loader?modules']},//打包处理css样式表的第三方loader</p>
+                                <p>6.以上步骤出来的类名是乱码样式的，可以通过localIdentName自定义模块化的类名：如下</p>
+                                <p> {test:/\.css$/,use:['style-loader',{ loader: 'css-loader',options: {modules: { localIdentName: '[path][name]-[local]-[hash:5]'},}}]},</p>
+                                <p>7.通过local和global设置类名是否被模块化</p>
+                                <img src="../../assets/img/react/img/是否模块化.png" alt="">
+                                <p>8.若在项目中将css结尾文件模块化，但是若导入第三方样式表的话（比如bootstrap,elementui的css文件）就也被模块化了，第三方文件的css应该是全局的，如此就有冲突了，解决方法如下：</p>
+                                <img src="../../assets/img/react/img/scss模块化.png" alt="">
+<!-- ********************************************************************************************************************************* -->
+
+                                <h3 id="nr-8">8.React中绑定事件注意点</h3>
+                                    <p style="padding-left: 120px;">1.事件的名称都是由React提供的，因此名称的首字母必须大写 onClick，onMouseOver</p>
+                                    <p style="padding-left: 120px;">2.为事件提供的处理函数，必须是如下格式</p>
+                                        <p  style="padding-left: 180px;">onClick={ function }</p>
+                                    <p style="padding-left: 120px;">3.用的最多的事件绑定形式为：</p>
+                                        <p style="padding-left: 160px;">&lt;button onClick={ ()=>this.show('传参')}&gt;按钮&lt;/button&gt;</p>
+                                            <p style="padding-left: 180px;">//事件的处理函数 需要定义为一个箭头函数 然后赋值给 函数名称</p>
+                                             <p style="padding-left: 180px;">show=(arg1) => {</p>
+                                                       <p style="padding-left: 200px;"> console.log('show方法'+arg1)</p>
+                                                            <p style="padding-left: 240px;">}</p>
+                                    <p style="padding-left: 120px;">4.在React中，如果想要修改state当中的数据 推荐使用this.setState({})</p>
+
+
+
+
+<!-- ********************************************************************************************************************************* -->
+                  
+                               <h3 id="nr-9">9.使用this.setState修改state上面的数据</h3>
+                               <img src="../../assets/img/react/img/setstate.png" alt="">
+<!-- ********************************************************************************************************************************* -->
+
+                             <h3 id="nr-10">10.React中绑定文本框与state中的值（做成类似vue中的v-model双向数据绑定的样子）</h3>
+                             <img src="../../assets/img/react/img/state中值同步到input输入框.png" alt="">
+                             <p>具体代码如下：</p>
+                             <img src="../../assets/img/react/img/state中值同步到input输入框code.png" alt="">
+
+<!-- ********************************************************************************************************************************* -->
+
+
+
+                             <h3 id="nr-11">11.组件的生命周期</h3>
+                                <p>- 概念：组件从创建、到运行、再到销毁，这期间总是伴随着各种各样的事件，那么，这些事件统称为 组件的生命周期函数；</p>
+                                <p>- 组件生命周期分为三部分：</p>
+                                   <p style="padding-left: 50px;">  - 组件创建阶段：生命周期函数，有一个显著的特点：组件一生只执行一次；</p>
+                                   <p style="padding-left: 50px;">  - 组件运行阶段：这些函数，也有显著的特点： 一生会根据属性props 和 状态 state 的改变，有选择性的触发0次或多次；</p>
+                                   <p style="padding-left: 50px;"> - 组件销毁阶段：这些函数，也有显著的特点：一生只执行一次；</p>
+                                <img src="../../assets/img/react/img/React中组件的生命周期-详解.png" alt=""> 
+
+
+                                <div class="demo-image__preview">
+                                    <el-image 
+                                        style="width: 100px; height: 100px"
+                                        :src="url" 
+                                        :preview-src-list="srcList">
+                                    </el-image>
+                                </div>
+                            <p>1.static defaultProps用法</p>
+                            <img src="../../assets/img/react/img/staticdefaultprops.png" alt="">
+                            <p>2.static propTypes 类型校验</p>
+                            <p>2.1若要为外界传过来的属性做类型校验，必须按照React提供的第三方包，叫做prop-types；cnpm add prop-types</p>
+                            <p>2.2import ReactTypes from 'prop-types'</p>
+                            <img src="../../assets/img/react/img/react类型校验.png" alt="">
+                            <p>3.代码详解</p>
+                            <img src="../../assets/img/react/img/生命周期函数讲解.png" alt="">
+                            <img src="../../assets/img/react/img/componentwillreceiveprops.png" alt="">
+
+<!-- ********************************************************************************************************************************* -->
+
+
+
+                             <h3 id="nr-12">12.绑定this并传参的3种方式</h3>
+                             <img src="../../assets/img/react/img/绑定this并传参的3种方式.png" alt="">
+
+
+<!-- ********************************************************************************************************************************* -->
+                             <h3 id="nr-13">13.扩展：父组件使用Context传值给孙子组件</h3>
+                             <img src="../../assets/img/react/img/常规父传孙.png" alt="">
+                             <p style="color:red">父组件使用Context传值给孙子组件:</p>
+                            <img src="../../assets/img/react/img/getChildContextTypes.png" alt="">
+
+<!-- ********************************************************************************************************************************* -->
+                             <h3 id="nr-14">14.React路由</h3>
+                             <img src="../../assets/img/react/img/router.png" alt="">
+                            
+
+
+
 
 
 
@@ -224,14 +349,39 @@
                                 <label>目录1</label>
                             </div>
                             <div class="ml-body">
-                                <ul>
+                                <!-- <ul>
+                                    <li><a href="#nr-2" style="color:#425669">2.React中几个核心的概念</a></li>
+                                    <li><a href="#nr-3" style="color:#425669">3.React项目的创建</a></li>
+                                    <li><a href="#nr-4" style="color:#425669">4.JSX语法</a></li>
+                                    <li><a href="#nr-5" style="color:#425669">5.组件的创建</a></li>
+                                    <li><a href="#nr-6" style="color:#425669">6.在组件中使用style行内样式</a></li>
+                                    <li><a href="#nr-7" style="color:#425669">7.在组件中使用css样式表美化html</a></li>
+                                    <li><a href="#nr-8" style="color:#425669">8.React中绑定事件注意点</a></li>
+                                    <li><a href="#nr-9" style="color:#425669">9.使用this.setState修改state上面的数据</a></li>
+                                    <li><a href="#nr-10" style="color:#425669">10.React中绑定文本框与state中的值（做成类似vue中的v-model双向数据绑定的样子）</a></li>
+                                    <li><a href="#nr-11" style="color:#425669">11.组件的生命周期</a></li>
+                                    <li><a href="#nr-12" style="color:#425669">12.绑定this并传参的3种方式</a></li>
+                                    <li><a href="#nr-13" style="color:#425669">13.扩展：父组件使用Context传值给孙子组件</a></li>
+                                </ul> -->
+                          
+                                <template>
+                                <ul class="infinite-list" v-infinite-scroll="load" style="overflow:auto;height:550px;">
                                     <li><a href="#nr-1" style="color:#425669">1.ReactJS简介</a></li>
                                     <li><a href="#nr-2" style="color:#425669">2.React中几个核心的概念</a></li>
                                     <li><a href="#nr-3" style="color:#425669">3.React项目的创建</a></li>
                                     <li><a href="#nr-4" style="color:#425669">4.JSX语法</a></li>
                                     <li><a href="#nr-5" style="color:#425669">5.组件的创建</a></li>
+                                    <li><a href="#nr-6" style="color:#425669">6.在组件中使用style行内样式</a></li>
+                                    <li><a href="#nr-7" style="color:#425669">7.在组件中使用css样式表美化html</a></li>
+                                    <li><a href="#nr-8" style="color:#425669">8.React中绑定事件注意点</a></li>
+                                    <li><a href="#nr-9" style="color:#425669">9.使用this.setState修改state上面的数据</a></li>
+                                    <li><a href="#nr-10" style="color:#425669">10.React中绑定文本框与state中的值（做成类似vue中的v-model双向数据绑定的样子）</a></li>
+                                    <li><a href="#nr-11" style="color:#425669">11.组件的生命周期</a></li>
+                                    <li><a href="#nr-12" style="color:#425669">12.绑定this并传参的3种方式</a></li>
+                                    <li><a href="#nr-13" style="color:#425669">13.扩展：父组件使用Context传值给孙子组件</a></li>
+                                    <li><a href="#nr-14" style="color:#425669">14.React路由</a></li>
                                 </ul>
-                                
+                                </template>
                             </div>
                     </div>
                 </div>
@@ -255,10 +405,19 @@ import backtop from '../../components/Backtop.vue'
         data() {
             return {
                 targets: '.mygithub',
+                count:0,
                 num:null,
+                url:require(`../../assets/img/react/img/React中组件的生命周期-详解.png`),
+                 srcList: [
+          require(`../../assets/img/react/img/React中组件的生命周期-详解.png`),
+         
+        ]
             }
         },
         methods:{
+            load(){
+        this.count = 22
+      },
              getScroll(e) {//获取鼠标滚动后的数值
                
                 this.num =e.target.scrollTop
@@ -349,7 +508,6 @@ import backtop from '../../components/Backtop.vue'
             }
         }
         .mulu{
-   
     width: 25%;
     position: fixed;
     right: 27px;
@@ -376,6 +534,7 @@ import backtop from '../../components/Backtop.vue'
                       top: 36px;
                 
                 }
+        
     }
     .myfoot{
 
