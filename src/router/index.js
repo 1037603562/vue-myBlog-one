@@ -22,6 +22,10 @@ Vue.use(VueRouter)
       component: () => import('../components/react/Reacthome.vue')
     },
     {
+      path:'/reactnativehome',
+      component: () => import('../components/react/ReactNativehome.vue')
+    },
+    {
       path:'/archives',
       component: () => import('../components/Archives.vue')
     },

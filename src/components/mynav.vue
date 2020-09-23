@@ -30,14 +30,35 @@
                        </a>
                    </li>
                 </router-link>
-                <router-link to="/reacthome">
+                <!-- <router-link to="/reacthome">
                      <li>
                        <a href="#">
                            <i class="el-icon-s-shop"></i>
                            <span>前端框架</span>
                        </a>
                    </li>
-                </router-link>
+                </router-link> -->
+                 <li>
+                       <a href="#">
+                           <i class="el-icon-postcard"></i>
+                           <!-- <span>关于</span> -->
+                            
+                        <el-dropdown>
+                        <span class="el-dropdown-link">
+                            框架<i class="el-icon-arrow-down el-icon--right"></i>
+                        </span>
+                        <el-dropdown-menu slot="dropdown">
+                           <router-link to="/reacthome">
+                                 <el-dropdown-item icon="el-icon-plus">react</el-dropdown-item>
+                           </router-link>
+                            <router-link to="/reactnativehome">
+                                <el-dropdown-item icon="el-icon-circle-plus">react native</el-dropdown-item>
+                            </router-link>
+                        </el-dropdown-menu>
+                        </el-dropdown>
+            
+                       </a>
+                   </li>
              <router-link to="/archives">
                     <li>
                        <a href="#">

@@ -1,5 +1,5 @@
 <template>
-    <div class="jsbase">
+    <div class="mygithub">
         <!-- 头部 -->
         <div class="mytop">
             <myNav></myNav>
@@ -7,42 +7,27 @@
         <!-- 身体 -->
         <div class="mybody">
                 <div class="my_card">
+                    <!-- html相关知识 -->
                     <el-card>
-                        <h3 id="nr-1">1.es6展开运算符“...”</h3>
-                            <p style="margin-left:50px;"> var o1={name:'zs'}</p>
-                            <p style="margin-left:50px;"> var o2={</p>
-                                    <p style="margin-left:100px;">age:22,</p>
-                                    <p style="margin-left:100px;"> address:'中国北京',</p>
-                                    <p style="margin-left:100px;">phone:13522222222</p>
-                            <p style="margin-left:100px;">}</p>
+                        <h1 style="margin-left:40%;">react native相关知识</h1>
+                        <h3 id="nr-1">1.Reactnative环境搭建</h3>
+                            <p>必须安装的依赖有：Node、Python2、JDK 和 Android Studio。</p>
+                            <p>注意 Node 的版本应大于等于 12，Python 的版本必须为 2.x（不支持 3.x），而 JDK 的版本必须是 1.8（目前不支持 1.9 及更高版本，注意 1.8 版本官方也直接称 8 版本）。安装完 Node 后建议设置 npm 镜像（淘宝源）以加速后面的过程（或使用科学上网工具）。</p>
+                            <p>详细的环境配置请移步<a href="https://reactnative.cn/docs/getting-started.html" target="_Blank" style="color:blue">这里</a></p>
 
-                            <p>(1)现有需求：将o2身上所有属性都传递给o1</p>
-                            <p style="margin-left:50px;"> var o1={</p>
-                                <p style="margin-left:100px;">name:'zs',</p>
-                                <p style="margin-left:100px;">...o2//3个点代表展开，即展开o2,o2身上有几个属性就展开并交给o1去使用</p>
-                            <p style="margin-left:100px;">}</p>
-
-
-                            <h3 id="nr-2">2.es6新特性关键字Class</h3>
-                            <img src="../assets/img/es6/es6Class关键字.png" alt="">
-
-                            <h3 id="nr-3">3.es6新特性关键字Class子类继承父类</h3>
-                            <img src="../assets/img/es6/es6Class关键字子类继承父类.png" alt="">
-
-                            <h3 id="nr-4">4.class构造器中super函数使用说明</h3>
-                            <img src="../assets/img/es6/class构造器中super函数使用说明.png" alt="">
-
-                            <h3 id="nr-5">5.class--为子类挂载独有的实例属性和实例方法</h3>
-                            <img src="../assets/img/es6/class-为子类挂载独有的实例属性和实例方法.png" alt="">
-                                            
-                             <h3 id="nr-6">6.es6中使用fetch进行数据请求</h3>
-                            <img src="../assets/img/es6/fetch.png" alt="">
+                            <p>调试设备：<a href="https://www.pianshen.com/article/72861608187/" target="_Blank" style="color:blue">这里</a></p>
+                             <img src="../../assets/img/reactnative/android调试方法.png" alt="">
 
 
 
-
-
-
+                    </el-card>
+                    <!-- css相关知识 -->
+                    <el-card style="margin-top:20px;">
+                        <h1 style="margin-left:40%;">其他框架相关知识</h1>
+                        <div>
+                          暂无
+                        </div>
+                        
 
                     </el-card>
                 </div>
@@ -50,19 +35,15 @@
                     <div class="mulu_m">
                              <div class="ml-top">
                                 <i class="el-icon-tickets"></i>
-                                <label>目录</label>
+                                <label>目录1</label>
                             </div>
                             <div class="ml-body">
-                                <ul>
-                                    <li><a href="#nr-1" style="color:#425669">1.es6展开运算符“...”</a></li>
-                                    <li><a href="#nr-2" style="color:#425669">2.es6新特性关键字Class</a></li>
-                                    <li><a href="#nr-3" style="color:#425669">3.es6新特性关键字Class子类继承父类</a></li>
-                                    <li><a href="#nr-4" style="color:#425669">4.class构造器中super函数使用说明</a></li>
-                                    <li><a href="#nr-5" style="color:#425669">5.class--为子类挂载独有的实例属性和实例方法</a></li>
-                                    <li><a href="#nr-6" style="color:#425669">6.es6中使用fetch进行数据请求</a></li>
-
+                                <template>
+                                <ul class="infinite-list" v-infinite-scroll="load" style="overflow:auto;height:550px;">
+                                    <li><a href="#nr-1" style="color:#425669">1.React native环境搭建</a></li>
+                                   
                                 </ul>
-                                
+                                </template>
                             </div>
                     </div>
                 </div>
@@ -78,22 +59,31 @@
 </template>
 
 <script>
-import myNav from '../components/mynav.vue'
-import myBottom from '../components/myBottom.vue'
-import backtop from '../components/Backtop.vue'
+import myNav from '../../components/mynav.vue'
+import myBottom from '../../components/myBottom.vue'
+import backtop from '../../components/Backtop.vue'
 
     export default {
         data() {
             return {
-                targets: '.jsbase',
+                targets: '.mygithub',
+                count:0,
                 num:null,
+                url:require(`../../assets/img/react/img/React中组件的生命周期-详解.png`),
+                 srcList: [
+          require(`../../assets/img/react/img/React中组件的生命周期-详解.png`),
+         
+        ]
             }
         },
         methods:{
+            load(){
+        this.count = 22
+      },
              getScroll(e) {//获取鼠标滚动后的数值
                
                 this.num =e.target.scrollTop
-                console.log(this.num)
+               // console.log(this.num)
             }
         },
          mounted () {
@@ -113,7 +103,11 @@ import backtop from '../components/Backtop.vue'
   .el-card{
       width: 100%!important;
       padding-left: 0!important;
-      margin-left: -50px!important;
+      margin-left: -95px!important;
+      margin-right: -30px!important;
+      h1{
+          margin-left: 0!important;
+      }
   }
    .mulu{
        display: none;
@@ -141,13 +135,12 @@ import backtop from '../components/Backtop.vue'
 	}
 
 
-
-.jsbase{
+.mygithub{
       overflow-x: hidden;
         overflow-y: scroll;
     
         }
-.jsbase{
+.mygithub{
     
 
     background-color: #e9e9e9;
@@ -156,7 +149,7 @@ import backtop from '../components/Backtop.vue'
     .mytop{
         width: 100%;
         height: 380px;
-        background: url(../assets/img/bgc4.jpg) no-repeat top center;
+        background: url(../../assets/img/bgc/darksky.jpg) no-repeat top center;
 		background-size: cover;
       
        
@@ -172,13 +165,11 @@ import backtop from '../components/Backtop.vue'
             .el-card{
                 width: 890px;
                 // height: 890px;
-                min-height: 500px;
                 border-radius: 20px;
                 padding-left: 25px;
             }
         }
         .mulu{
-   
     width: 25%;
     position: fixed;
     right: 27px;
@@ -205,6 +196,7 @@ import backtop from '../components/Backtop.vue'
                       top: 36px;
                 
                 }
+        
     }
     .myfoot{
 

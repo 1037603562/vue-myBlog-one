@@ -81,11 +81,21 @@
 import myNav from '../components/mynav.vue'
 import myBottom from '../components/myBottom.vue'
 import backtop from '../components/Backtop.vue'
-
+import  fetchJsonp  from 'fetch-jsonp'
     export default {
         data() {
             return {
                 targets: '.mylabel'
+            }
+        },
+        created(){
+            this.getMsg()
+        },
+        methods:{
+            getMsg(){
+                fetch("https://m.maoyan.com/ajax/movieOnInfoList")
+                .then(response => response.json() )
+                .then(data => console.log(data))
             }
         },
        components: {
