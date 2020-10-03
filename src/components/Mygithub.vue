@@ -9,6 +9,7 @@
                 <div class="my_card">
                     <el-card>
                         <h3 id="nr-1">1.怎么将自己的项目上传至github</h3>
+                        <a href="https://www.jianshu.com/p/6e5547186c83">移步这里</a>
                         <img src="../assets/img/mygithub/怎么将自己的项目上传至github - 简书.png" alt="" srcset="">
 
                          <h3 id="nr-2">2.github秘钥相关</h3>
