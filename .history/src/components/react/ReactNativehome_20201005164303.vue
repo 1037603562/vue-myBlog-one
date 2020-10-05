@@ -139,7 +139,7 @@
                                 <p>}</p>
 
                                 <p>// 第3步：</p>
-                                <p>&lt;Image source={{ 'uri: this.state.imgURL' }} style={{ 'width: 200, height: 200 '}}&gt;&lt;/Image&gt;</p>
+                                <p>&lt;Image source={{ uri: this.state.imgURL }} style={{ width: 200, height: 200 }}&gt;&lt;/Image&gt;</p>
                                 <p>&lt;Button title="拍照" onPress={this.cameraAction}&gt;&lt;/Button&gt;</p>
 
                                 <p>// 第4步：</p>
@@ -154,7 +154,7 @@
                                 <p>});</p>
                                <p> })</p>
                                 <p>}</p>
-                            <p>6.一定要退出之前调试的App，并重新运行react-native run-android进行打包部署；这次打包期间会下载一些jar的包，需要耐心等待！</p>
+
 
 
 

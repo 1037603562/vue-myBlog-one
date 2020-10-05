@@ -98,71 +98,21 @@
                             <p>import com.facebook.react.modules.core.PermissionListener; // &lt;- add this import</p>
 
                             <p> public class MainActivity extends ReactActivity {</p>
-                                <p style="padding-left:40px">// 2. 添加如下一行：</p>
-                               <p style="padding-left:40px"> private PermissionListener listener; // &lt;- add this attribute</p>
+                                <p style="padding-left:20px">// 2. 添加如下一行：</p>
+                               <p> private PermissionListener listener; // &lt;- add this attribute</p>
 
-                               <p style="padding-left:40px"> /**</p>
-                               <p style="padding-left:40px"> * Returns the name of the main component registered from JavaScript.</p>
-                              <p style="padding-left:40px">  * This is used to schedule rendering of the component.</p>
-                              <p style="padding-left:40px">  */</p>
-                               <p style="padding-left:40px"> @Override</p>
-                              <p style="padding-left:40px">  protected String getMainComponentName() {</p>
+                               <p> /**</p>
+                               <p> * Returns the name of the main component registered from JavaScript.</p>
+                              <p>  * This is used to schedule rendering of the component.</p>
+                              <p>  */</p>
+                               <p> @Override</p>
+                              <p>  protected String getMainComponentName() {</p>
                                     return "native_camera";</p>
-                               <p style="padding-left:40px"> }</p>
-                           <p style="padding-left:40px"> }</p>
-                   
-                            <p>5.在项目中添加如下代码：</p>
-                                <p>// 第1步：</p>
-                               <p> import {View, Button, Image} from 'react-native'</p>
-                                <p>import ImagePicker from 'react-native-image-picker'</p>
-                                <p>var photoOptions = {</p>
-                                <p>//底部弹出框选项</p>
-                                <p>title: '请选择',</p>
-                                <p>cancelButtonTitle: '取消',</p>
-                                <p>takePhotoButtonTitle: '拍照',</p>
-                                <p>chooseFromLibraryButtonTitle: '选择相册',</p>
-                                <p>quality: 0.75,</p>
-                                <p>allowsEditing: true,</p>
-                                <p>noData: false,</p>
-                                <p>storageOptions: {</p>
-                                    <p>skipBackup: true,</p>
-                                    <p>path: 'images'</p>
-                                <p>}</p>
-                                <p>}</p>
-
-                                <p>// 第2步：</p>
-                                <p>constructor(props) {</p>
-                                <p>super(props);</p>
-                                    <p>this.state = {</p>
-                                    <p>imgURL: ''</p>
-                                    <p>}</p>
-                                <p>}</p>
-
-                                <p>// 第3步：</p>
-                                <p>&lt;Image source={{ 'uri: this.state.imgURL' }} style={{ 'width: 200, height: 200 '}}&gt;&lt;/Image&gt;</p>
-                                <p>&lt;Button title="拍照" onPress={this.cameraAction}&gt;&lt;/Button&gt;</p>
-
-                                <p>// 第4步：</p>
-                                <p>cameraAction = () => {</p>
-                                <p>ImagePicker.showImagePicker(photoOptions, (response) => {</p>
-                                <p>console.log('response' + response);</p>
-                               <p> if (response.didCancel) {</p>
-                                    <p>return</p>
                                <p> }</p>
-                                <p>this.setState({</p>
-                                   <p> imgURL: response.uri</p>
-                                <p>});</p>
-                               <p> })</p>
-                                <p>}</p>
-                            <p>6.一定要退出之前调试的App，并重新运行react-native run-android进行打包部署；这次打包期间会下载一些jar的包，需要耐心等待！</p>
-
-
-
-
-
-
-
-
+                           <p> }</p>
+                   
+                   
+                   
                    
                     </el-card>
                     <!-- css相关知识 -->

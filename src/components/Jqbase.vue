@@ -8,8 +8,8 @@
         <div class="mybody">
                 <div class="my_card">
                     <el-card>
-                       
-                        
+                        <h3 id="nr-1">1.justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式</h3>
+                        <a href="https://www.runoob.com/cssref/css3-pr-justify-content.html" style="color:blue">详细介绍点击这里</a>
 
                     </el-card>
                 </div>
@@ -21,7 +21,7 @@
                             </div>
                             <div class="ml-body">
                                 <ul>
-                                    <li><a href="#nr-1" style="color:#425669">1.localstorage和sessionstorage的区别</a></li>
+                                    <li><a href="#nr-1" style="color:#425669">1.分散对齐justifyContent</a></li>
                                     <!-- <li><a href="#nr-2" style="color:#425669">2.github秘钥相关</a></li>
                                     <li><a href="#nr-3" style="color:#425669">3.上传至GitHub所需语句</a></li>
                                     <li><a href="#nr-4" style="color:#425669">4.更新代码到github</a></li> -->
